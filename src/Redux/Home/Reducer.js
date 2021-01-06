@@ -1,9 +1,4 @@
-// import { actionsTypes } from './Constant'
-import {
-  LOAD_REQUEST,
-  LOAD_SUCCESS,
-  LOAD_FAILURE
-} from './Constant';
+import HomeCart from './Constant'
 
 const INITIAL_STATE = {
   products: [],
@@ -14,12 +9,12 @@ const INITIAL_STATE = {
 
 const homeReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case LOAD_REQUEST:
-      return { ...state, loading: true };
-    case LOAD_SUCCESS:
-      return { ...state, products: action.payload.products, categories: action.payload.categories };
-    case LOAD_FAILURE:
-      return { ...state, loading: false, error: true, products: [] };
+    case HomeCart.LOAD_REQUEST:
+      return { ...state, loading: true }
+    case HomeCart.LOAD_SUCCESS:
+      return { ...state, products: action.payload.products, categories: action.payload.categories }
+    case HomeCart.LOAD_FAILURE:
+      return { ...state, loading: false, error: true, products: [] }
     default:
       return state
   }

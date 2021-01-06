@@ -1,20 +1,20 @@
-import { LOAD_REQUEST, LOAD_SUCCESS, LOAD_FAILURE } from './Constant';
+import HomeCart from './Constant'
 
 export function loadRequest() {
   return {
-    type: LOAD_REQUEST
+    type: HomeCart.LOAD_REQUEST
   }
 }
 
 export function loadSuccess(products, categories) {
   return {
-    type: LOAD_SUCCESS,
+    type: HomeCart.LOAD_SUCCESS,
     payload: { products, categories }
   }
 }
 
 export function loadFailure() {
   return {
-    type: LOAD_FAILURE
+    type: HomeCart.LOAD_FAILURE
   }
 }

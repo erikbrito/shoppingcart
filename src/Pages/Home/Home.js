@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
-// import { Link } from 'react-router-dom'
 
 import { useDispatch, useSelector } from 'react-redux'
 import { loadRequest } from '../../Redux/Home/Actions'
-import * as CartActions from '../../Redux/Cart/Actions';
+import * as CartActions from '../../Redux/Cart/Actions'
 
 const Home = () => {
   const Products = useSelector(state => state.homeReducer.products)
@@ -13,11 +12,11 @@ const Home = () => {
   const [numberId, setNumberId] = useState(0)
 
   function handleAddProduct(products) {
-    dispatch(CartActions.addToCart(products));
+    dispatch(CartActions.addToCart(products))
   }
   useEffect(() => {
     loadRequest()
-  }, []);
+  }, [])
 
   return (
     <div className="App">
@@ -38,7 +37,7 @@ const Home = () => {
         </ul>
       </div>
     </div>
-  );
+  )
 }
 
 export default Home

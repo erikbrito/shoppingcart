@@ -1,4 +1,4 @@
-import ActionsCart from './Constant';
+import ActionsCart from './Constant'
 
 export function addToCart(products) {
   return {
@@ -21,6 +21,7 @@ export function updateAmount(id, amount) {
     amount,
   }
 }
+
 export function finishToShop() {
   return {
     type: ActionsCart.FINISH_TO_SHOP

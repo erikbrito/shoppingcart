@@ -1,10 +1,9 @@
-// import React, { useState, useEffect } from 'react'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import * as CartActions from '../../Redux/Cart/Actions';
+import * as CartActions from '../../Redux/Cart/Actions'
 
-import { formatPrice } from '../../util/format';
+import { formatPrice } from '../../util/format'
 
 const Checkout = () => {
   const Products = useSelector(state => state.cartReducer)
@@ -17,26 +16,18 @@ const Checkout = () => {
     )
   )
 
-  // const [numberId, setNumberId] = useState(0)
-  // const [categories, setCategories] = useState([])
-  // const [products, setProducts] = useState([])
-  // const [sum, setSum] = useState()
-  // const [total, setTotal] = useState()
-
-  // console.log(Checkout)
-
   const dispatch = useDispatch()
 
   function incrementAmount(product) {
-    dispatch(CartActions.updateAmount(product.id, product.amount + 1));
+    dispatch(CartActions.updateAmount(product.id, product.amount + 1))
   }
 
   function decrementAmount(product) {
-    dispatch(CartActions.updateAmount(product.id, product.amount - 1));
+    dispatch(CartActions.updateAmount(product.id, product.amount - 1))
   }
   
   function finish() {
-    dispatch(CartActions.finishToShop());
+    dispatch(CartActions.finishToShop())
   }
 
   return (

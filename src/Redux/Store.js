@@ -18,6 +18,6 @@ const persistedReducer = persistReducer(persistConfig, reducers)
 const store = createStore(persistedReducer, applyMiddleware(SagaMiddleware))
 const persistor = persistStore(store)
 
-SagaMiddleware.run(rootSaga);
+SagaMiddleware.run(rootSaga)
 
 export { store, persistor }

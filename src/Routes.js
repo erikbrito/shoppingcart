@@ -5,7 +5,7 @@ import Navbar from './Pages/Navbar/Navbar'
 import Home from './Pages/Home/Home'
 import Checkout from './Pages/Checkout/Checkout'
 
-import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'
 
 import { store, persistor } from './Redux/Store'
 import { PersistGate } from 'redux-persist/integration/react'

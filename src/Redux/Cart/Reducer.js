@@ -1,14 +1,7 @@
-// import { actionsTypes } from './Constant'
 import produce from 'immer';
 import ActionsCart from './Constant';
 
-// const INITIAL_STATE = {
-//   cart: []
-// }
-
 const cartReducer = (state = [], action) => {
-  // console.log(action);
-  // return [];
 
   switch (action.type) {
     case ActionsCart.ADD_CART:
