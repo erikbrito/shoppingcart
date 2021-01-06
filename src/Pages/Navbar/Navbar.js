@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { MdShoppingCart } from 'react-icons/md';
 import { AiFillShopping } from 'react-icons/ai';
-import './Navbar.scss'
+import './navbar.scss'
 
 const Navbar = () => {
   const Cart = useSelector(state => state.cartReducer)
@@ -12,7 +12,7 @@ const Navbar = () => {
     <header id="main-header">
       <Link id="logo" to="/">
         <AiFillShopping size={36} color="#FFF" />
-        <strong>Logo</strong>
+        <strong>Shopping Cart</strong>
       </Link>
 
       <Link id="link" to="/checkout">

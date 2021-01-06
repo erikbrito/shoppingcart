@@ -31,7 +31,7 @@ const Checkout = () => {
   }
 
   return (
-    <div>
+    <div id="body">
       <h1>checkout</h1>
 
       <div>
