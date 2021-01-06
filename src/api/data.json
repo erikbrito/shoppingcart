@@ -1,0 +1,66 @@
+{
+ "products": [
+   {
+     "id": 0,
+     "idCategory": 0,
+     "name": "Coca-cola lata",
+     "description": "Coca-cola lata 350ml",
+     "price": 3.50,
+     "image": ""
+   },
+   {
+     "id": 1,
+     "idCategory": 0,
+     "name": "Fanta uva lata",
+     "description": "Fanta uva lata 350ml",
+     "price": 3.50,
+     "image": ""
+   },
+   {
+     "id": 2,
+     "idCategory": 1,
+     "name": "Bolo de chocolate",
+     "description": "Bolo de chocolate com calda",
+     "price": 4.00,
+     "image": ""
+   },
+   {
+     "id": 3,
+     "idCategory": 1,
+     "name": "Brigadeiro",
+     "description": "Brigadeiro de coco",
+     "price": 0.50,
+     "image": ""
+   },
+   {
+     "id": 4,
+     "idCategory": 2,
+     "name": "Coxinha de frango",
+     "description": "Coxinha de frango com catupiry",
+     "price": 3.00,
+     "image": ""
+   },
+   {
+     "id": 5,
+     "idCategory": 2,
+     "name": "Esfiha de carne",
+     "description": "Esfiha de carne assado",
+     "price": 3.00,
+     "image": ""
+   }
+ ],
+ "categories": [
+   {
+     "id": 0,
+     "name": "Bebidas"
+   },
+   {
+     "id": 1,
+     "name": "Doces"
+   },
+   {
+     "id": 2,
+     "name": "Salgados"
+   }
+ ]
+}
