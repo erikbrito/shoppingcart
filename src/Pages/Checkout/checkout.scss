@@ -1,0 +1,145 @@
+#container {
+  padding: 30px;
+  background: #fff;
+  border-radius: 4px;
+
+  footer {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+      background: #da552f;
+      color: #fff;
+      border: 0;
+      border-radius: 4px;
+      padding: 12px 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+      transition: 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+#ProductTable {
+  width: 100%;
+
+  thead th {
+    color: #999;
+    text-align: left;
+    padding: 12px;
+  }
+
+  tbody td {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .td-description {
+    padding: 0 22em 0 5em;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  strong {
+    color: #333;
+    display: block;
+  }
+
+  span {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    input {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      color: #666;
+      padding: 6px;
+      width: 50px;
+    }
+  }
+
+  button {
+    background: none;
+    border: 0;
+    padding: 6px;
+  }
+}
+
+#Total {
+  display: flex;
+  align-items: baseline;
+
+  span {
+    color: #999;
+    font-weight: bold;
+  }
+
+  strong {
+    font-size: 28px;
+    margin-left: 5px;
+  }
+}
+
+#EmptyCart {
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 560px) {
+    min-height: 400px;
+  }
+
+  svg {
+    font-size: 260px;
+    color: #f3f3f6;
+    position: absolute;
+  }
+
+  div {
+    z-index: 1;
+    text-align: center;
+
+    h2 {
+      font-size: 56px;
+    }
+
+    p {
+      margin: 12px 0 28px;
+      font-size: 16px;
+    }
+  }
+}
+
+#StartShopping {
+  background: #da552f;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
