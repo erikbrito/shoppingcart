@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -10,8 +10,12 @@ import { MdRemoveCircleOutline, MdAddCircleOutline } from 'react-icons/md';
 
 import './checkout.scss'
 
+import Modal from '../Modal/Modal'
+
 const Checkout = () => {
   const Products = useSelector(state => state.cartReducer)
+
+  const [modal, setModal] = useState(false)
 
   const totalPrice = formatPrice(
     useSelector(state =>
@@ -33,6 +37,7 @@ const Checkout = () => {
 
   function finish() {
     dispatch(CartActions.finishToShop())
+      setModal(!modal)
   }
 
   return (
@@ -96,6 +101,7 @@ const Checkout = () => {
           </div>
         )
       }
+      { modal ? <Modal /> : null }
     </div>
   )
 }
