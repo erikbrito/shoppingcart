@@ -28,6 +28,7 @@ const Home = () => {
   function handleAddProduct(products) {
     dispatch(CartActions.addToCart(products))
   }
+  
   useEffect(() => {
     loadRequest()
   }, [])
