@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - checkout: checkout projeto
+      - name: checkout projeto
         uses: actions/checkout@v2
 
       - name: setup node.js enviroment
