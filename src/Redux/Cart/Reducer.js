@@ -1,4 +1,4 @@
-import produce from 'immer';
+import { produce } from 'immer';
 import ActionsCart from './Constant';
 
 const cartReducer = (state = [], action) => {
