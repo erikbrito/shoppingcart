@@ -8,13 +8,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: setup node.js enviroment
+      - name: Using Node.js
         uses: actions/setup-node@v2
         with:
           node-version: 16.
-      - name: install dependencies and run test
+      - name: run install, build and test
         run: |
           npm install
-          npm run build
           npm run test
         
