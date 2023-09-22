@@ -37,3 +37,4 @@ You will also see any lint errors in the console.
 - [Redux-Saga](https://redux-saga.js.org/)
 - [Axios](https://github.com/axios/axios)
 - [Immer](https://immerjs.github.io/immer/docs/introduction)
+- [Jest](https://jestjs.io/pt-BR/)
