@@ -6,11 +6,15 @@
   <img src="https://user-images.githubusercontent.com/5699834/105098398-c27dab80-5a88-11eb-801c-313848485b93.png" width="752" height="398">
 </p>
 
-<h2 align="center">Demo on</h2>
+<h2 align="center">Demo on Vercel</h2>
 <p align="center">
-  <a href="https://zerik-shopcart.herokuapp.com/" target="_blank">
-    <img alt="Demo on Heroku" src="https://miro.medium.com/max/3600/1*fIjRtO5P8zc3pjs0E5hYkw.png" width="320" height="150">
+  <a href="https://shoppingcart-erikbrito01.vercel.app/" target="_blank">
+    <img alt="Demo on Vercel" src="https://www.datocms-assets.com/75941/1657702911-vercel-logotype-light_20211228160702_0.png" width="320" height="80">
   </a>
+</p>
+
+<p align="center">
+  <a href="https://shoppingcart-erikbrito01.vercel.app/" target="_blank"> Demo link </a>
 </p>
 
 ## Please Read
